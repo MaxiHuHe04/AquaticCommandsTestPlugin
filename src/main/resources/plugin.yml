@@ -1,0 +1,11 @@
+name: AquaticCommandsTestPlugin
+main: me.maxih.aquaticcommandstestplugin.AquaticCommandsTestPlugin
+depend: [AquaticCommands]
+version: 1.0
+commands:
+  ping:
+    description: Pong!
+    usage: /ping
+  nuke:
+    description: BOOM
+    usage: /nuke [amount] [radius]
