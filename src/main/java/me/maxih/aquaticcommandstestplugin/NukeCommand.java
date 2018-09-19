@@ -11,7 +11,8 @@ import scala.collection.Seq;
 import scala.collection.immutable.Map;
 
 public class NukeCommand implements Command {
-    private LiteralNode rootNode = new LiteralNode("nuke", true)
+    @SuppressWarnings("RedundantCast")
+    private LiteralNode rootNode = (LiteralNode) new LiteralNode("nuke", true)
             .add(ScalaUtil.varargs(new ArgumentNode("amount", new Parsers.IntParser(false), true)))
             .add(ScalaUtil.varargs(new ArgumentNode("radius", new Parsers.DoubleParser(false), true)));
 
